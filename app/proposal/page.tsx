@@ -402,7 +402,7 @@ export default function Proposal() {
           This comprehensive website redesign represents a significant upgrade to your online presence and ministry outreach capabilities.
         </p>
 
-        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(320px, 1fr))',gap:'2rem',marginBottom:'3rem'}}>
+        <div className="investment-cards-grid" style={{marginBottom:'3rem'}}>
           <div className="investment-card">
             <div className="investment-card-header">
               <h3 style={{fontSize:'1.25rem',marginBottom:'0.75rem',fontWeight:'600'}}>Essential</h3>

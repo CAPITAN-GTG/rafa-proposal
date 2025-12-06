@@ -1,0 +1,300 @@
+/* Navigation - Template Style */
+.menuWrap {
+  position: fixed;
+  width: 100%;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.menuWrap .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 15px 20px;
+  min-height: 80px;
+  box-sizing: border-box;
+}
+
+.menuWrap .sixteen.columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  min-height: 50px;
+}
+
+.header {
+  background: rgba(245, 245, 245, 0);
+  transition: all 0.5s ease-out;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.shrink {
+  background: rgba(245, 245, 245, 1);
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-height: 70px;
+}
+
+.shrink .container {
+  padding: 12px 20px;
+  min-height: 70px;
+}
+
+.slimmenu {
+  padding-top: 0;
+  padding-right: 0;
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: nowrap;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slimmenu li {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  padding-left: 0;
+  white-space: nowrap;
+}
+
+.slimmenu li a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #fff;
+  padding: 8px 6px;
+  cursor: pointer;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  font-size: 9px;
+  letter-spacing: 0.2px;
+  transition: all 300ms linear;
+  text-decoration: none;
+  white-space: nowrap;
+  min-width: fit-content;
+}
+
+.slimmenu li a svg {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.slimmenu li a:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.slimmenu li a:hover svg {
+  opacity: 1;
+}
+
+.shrink .slimmenu li a {
+  color: #000;
+}
+
+.shrink .slimmenu li a:hover {
+  border-bottom: 3px solid rgba(0, 0, 0, 1);
+}
+
+.shrink .slimmenu li {
+  background: none;
+}
+
+/* Church Logo */
+.churchLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10001;
+}
+
+.churchLogoIcon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  font-family: 'Montserrat', sans-serif;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.churchLogoText {
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.churchLogoLocation {
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin-top: 1px;
+}
+
+/* Logo in shrunk header */
+.shrink .churchLogoIcon {
+  width: 32px;
+  height: 32px;
+  font-size: 0.85rem;
+  background: rgba(245, 245, 245, 0.95);
+}
+
+.shrink .churchLogoText {
+  font-size: 0.65rem;
+  color: var(--text-dark);
+}
+
+.shrink .churchLogoLocation {
+  font-size: 0.55rem;
+  color: var(--text-medium);
+}
+
+/* Responsive - Show mobile menu button on small screens */
+@media (max-width: 1023px) {
+  .menuWrap {
+    min-height: 70px;
+  }
+  
+  .menuWrap .container {
+    padding: 12px 20px;
+    min-height: 70px;
+  }
+  
+  .menuWrap .sixteen.columns {
+    justify-content: flex-start;
+    min-height: auto;
+  }
+  
+  .churchLogo {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    margin-left: 10px;
+  }
+  
+  .churchLogoText {
+    font-size: 0.65rem !important;
+    line-height: 1.1;
+  }
+  
+  .churchLogoLocation {
+    font-size: 0.6rem !important;
+  }
+  
+  .churchLogoIcon {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1rem !important;
+  }
+  
+  .slimmenu {
+    right: 20px;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Desktop (1367px+) - Show desktop menu */
+@media (min-width: 1367px) {
+  .slimmenu.mobile-hidden {
+    display: flex !important;
+  }
+  
+  .menuWrap .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .churchLogo {
+    left: 30px;
+    right: auto;
+  }
+  
+  .slimmenu {
+    right: 30px;
+    left: auto;
+    gap: 6px;
+  }
+  
+  .slimmenu li a {
+    padding: 8px 8px;
+    font-size: 9px;
+  }
+}
+
+/* iPad Pro (1024px - 1366px) - Show mobile menu */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .menuWrap {
+    min-height: 70px;
+  }
+  
+  .menuWrap .container {
+    padding: 12px 30px;
+    min-height: 70px;
+  }
+  
+  .menuWrap .sixteen.columns {
+    justify-content: flex-start;
+    min-height: auto;
+  }
+  
+  .churchLogo {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    margin-left: 10px;
+  }
+  
+  .slimmenu {
+    right: 30px;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+

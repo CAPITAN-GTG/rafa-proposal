@@ -1,0 +1,168 @@
+/* Facts Section */
+.factsWrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.parallax {
+  background-repeat: repeat fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.backgroundGrid {
+  position: absolute;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.justPattern {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+  background-image: url('/pattern.png');
+  background-blend-mode: overlay;
+  opacity: 0.7;
+  background-repeat: repeat;
+}
+
+.factsSection {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.factsSection * {
+  position: relative;
+  z-index: 2;
+}
+
+.factsSection h3 {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.factsSection h6 {
+  position: relative;
+  z-index: 2;
+}
+
+.factsSection .container {
+  position: relative;
+  z-index: 2;
+}
+
+.factsSection .four.columns {
+  position: relative;
+  z-index: 2;
+}
+
+.topText {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+  z-index: 2;
+}
+
+.topText h3 {
+  position: relative;
+  z-index: 2;
+}
+
+.topText .subline {
+  position: relative;
+  z-index: 2;
+}
+
+.subline {
+  position: relative;
+  width: 80px;
+  height: 3px;
+  margin: 20px auto 0;
+  background: #fff;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.factsWrap {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.factsWrap h6 {
+  padding-top: 15px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.factsLine {
+  position: absolute;
+  width: 1px;
+  background: #fff;
+  opacity: 0.7;
+  right: -10px;
+  top: 30px;
+  bottom: 30px;
+  z-index: 20;
+}
+
+.factsWrapNum {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 80px;
+  text-shadow: 0px -2px 0px rgba(51,51,51,.3), 0px 2px 3px rgba(102,102,102,.3);
+  width: 100%;
+  text-align: center;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.counter {
+  display: inline-block;
+}
+
+/* Responsive */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .factsWrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .factsWrapNum {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
