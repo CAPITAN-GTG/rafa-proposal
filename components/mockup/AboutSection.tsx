@@ -2,7 +2,7 @@
 
 import ElastiStack from '@/components/ElastiStack';
 import ScrollReveal from '@/components/ScrollReveal';
-import styles from './AboutSection.module.css';
+import styles from './css/AboutSection.module.css';
 
 export default function AboutSection() {
   return (
@@ -17,11 +17,11 @@ export default function AboutSection() {
         <div className="six columns" data-scrollreveal="enter left and move 50px over 1s">
           <ElastiStack 
             images={[
-              '/placeholder_1.webp',
-              '/placeholder_2.webp',
-              '/placeholder_3.webp',
-              '/placeholder_4.webp',
-              '/placeholder_5.webp'
+              '/choir.webp',
+              '/prayer.webp',
+              '/dancing.webp',
+              '/event.webp',
+              '/trio.webp'
             ]}
             altText="Drag Me"
           />

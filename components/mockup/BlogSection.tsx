@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { FileText } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
-import styles from './BlogSection.module.css';
+import styles from './css/BlogSection.module.css';
 
 export default function BlogSection() {
   return (

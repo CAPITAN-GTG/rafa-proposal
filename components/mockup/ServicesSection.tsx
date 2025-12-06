@@ -2,7 +2,7 @@
 
 import ServicesCarousel from '@/components/ServicesCarousel';
 import ScrollReveal from '@/components/ScrollReveal';
-import styles from './ServicesSection.module.css';
+import styles from './css/ServicesSection.module.css';
 
 export default function ServicesSection() {
   return (

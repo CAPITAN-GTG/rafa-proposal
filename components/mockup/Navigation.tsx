@@ -3,7 +3,7 @@
 import { Home, Info, Calendar, Users, Gift, Video } from 'lucide-react';
 import MobileNav from '@/components/MobileNav';
 import { useAnimatedHeader } from '@/hooks/useAnimatedHeader';
-import styles from './Navigation.module.css';
+import styles from './css/Navigation.module.css';
 
 export default function Navigation() {
   const { isShrunk } = useAnimatedHeader({ shrinkPoint: 100 });

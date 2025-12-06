@@ -1,7 +1,7 @@
 'use client';
 
 import ScrollReveal from '@/components/ScrollReveal';
-import styles from './ParallaxSection.module.css';
+import styles from './css/ParallaxSection.module.css';
 
 interface ParallaxSectionProps {
   id: string;

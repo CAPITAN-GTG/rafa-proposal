@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import ScrollReveal from '@/components/ScrollReveal';
-import styles from './WorksSection.module.css';
+import styles from './css/WorksSection.module.css';
 
 export default function WorksSection() {
   return (

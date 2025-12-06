@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { X, Video } from 'lucide-react';
-import styles from './LivestreamPopup.module.css';
+import styles from './css/LivestreamPopup.module.css';
 
 export default function LivestreamPopup() {
   const [isVisible, setIsVisible] = useState(false);

@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import HeroVideo from '@/app/mockup/HeroVideo';
-import styles from './HeroSection.module.css';
+import styles from './css/HeroSection.module.css';
 
 export default function HeroSection() {
   useEffect(() => {

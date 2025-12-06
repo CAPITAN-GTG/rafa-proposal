@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Facebook, Mail } from 'lucide-react';
-import styles from './TeamSection.module.css';
+import styles from './css/TeamSection.module.css';
 
 export default function TeamSection() {
   return (
@@ -18,8 +18,8 @@ export default function TeamSection() {
         <div className="clear"></div>
         <div className="four columns" data-scrollreveal="enter left and move 50px over 1s">
           <div className={styles.teamMem}>
-            <Image src="/choir.webp" alt="Team Member" width={220} height={220} className={styles.teamImg} loading="lazy" />
-            <h6>Rev. Joyce Stickney</h6>
+            <Image src="/aboutus_1.webp" alt="Team Member" width={220} height={220} className={styles.teamImg} loading="lazy" />
+            <h6>The Rev. Dr. Joyce Stickney</h6>
             <p><span>Rector</span></p>
             <div className={styles.socialTeam}>
               <ul className={styles.teamSocial}>
@@ -31,9 +31,9 @@ export default function TeamSection() {
         </div>
         <div className="four columns" data-scrollreveal="enter bottom and move 50px over 1s">
           <div className={styles.teamMem}>
-            <Image src="/choir_violin.webp" alt="Team Member" width={220} height={220} className={styles.teamImg} loading="lazy" />
-            <h6>Sarah Johnson</h6>
-            <p><span>Music Director</span></p>
+            <Image src="/aboutus_2.webp" alt="Team Member" width={220} height={220} className={styles.teamImg} loading="lazy" />
+            <h6>The Rev. Ed Milkovich</h6>
+            <p><span>Associate Priest</span></p>
             <div className={styles.socialTeam}>
               <ul className={styles.teamSocial}>
                 <li className={styles.iconTeam}><a href="#"><Facebook size={16} /></a></li>
@@ -44,9 +44,9 @@ export default function TeamSection() {
         </div>
         <div className="four columns" data-scrollreveal="enter bottom and move 50px over 1s">
           <div className={styles.teamMem}>
-            <Image src="/prayer.webp" alt="Team Member" width={220} height={220} className={styles.teamImg} loading="lazy" />
-            <h6>Michael Brown</h6>
-            <p><span>Youth Director</span></p>
+            <Image src="/aboutus_3.webp" alt="Team Member" width={220} height={220} className={styles.teamImg} loading="lazy" />
+            <h6>Lauren Begert</h6>
+            <p><span>Pastor for Community and Campus Engagement</span></p>
             <div className={styles.socialTeam}>
               <ul className={styles.teamSocial}>
                 <li className={styles.iconTeam}><a href="#"><Facebook size={16} /></a></li>
@@ -58,13 +58,13 @@ export default function TeamSection() {
         <div className="four columns" data-scrollreveal="enter right and move 50px over 1s">
           <div className={styles.teamMem}>
             <div className={styles.teamMask}>
-              <Image src="/prayer_2.webp" alt="Join Our Team" width={220} height={220} className={styles.teamImg} loading="lazy" />
+              <Image src="/aboutus_4.webp" alt="Join Our Team" width={220} height={220} className={styles.teamImg} loading="lazy" />
               <div className={styles.mask}></div>
               <h3>join our</h3>
               <h4>community</h4>
             </div>
-            <h6>join our team</h6>
-            <p><span>Tell Us About You</span></p>
+            <h6>Nathaniel Sherrill</h6>
+            <p><span>Parish Administrator</span></p>
             <div className={styles.socialTeam}>
               <ul className={styles.teamSocial}>
                 <li className={styles.iconTeam}><a href="#"><Mail size={16} /></a></li>

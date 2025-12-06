@@ -1,7 +1,7 @@
 'use client';
 
 import ScrollReveal from '@/components/ScrollReveal';
-import styles from './TestimonialsSection.module.css';
+import styles from './css/TestimonialsSection.module.css';
 
 export default function TestimonialsSection() {
   return (

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Facebook, Mail, Youtube } from 'lucide-react';
-import styles from './Footer.module.css';
+import styles from './css/Footer.module.css';
 
 export default function Footer() {
   return (

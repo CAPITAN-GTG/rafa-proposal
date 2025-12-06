@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import styles from './FactsSection.module.css';
+import styles from './css/FactsSection.module.css';
 
 export default function FactsSection() {
   useEffect(() => {

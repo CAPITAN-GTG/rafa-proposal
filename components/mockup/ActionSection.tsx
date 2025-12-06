@@ -1,7 +1,7 @@
 'use client';
 
 import ScrollReveal from '@/components/ScrollReveal';
-import styles from './ActionSection.module.css';
+import styles from './css/ActionSection.module.css';
 
 export default function ActionSection() {
   return (

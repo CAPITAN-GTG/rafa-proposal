@@ -2,7 +2,7 @@
 
 import { MapPin, Phone, Mail, Globe } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
-import styles from './ContactSection.module.css';
+import styles from './css/ContactSection.module.css';
 
 export default function ContactSection() {
   return (

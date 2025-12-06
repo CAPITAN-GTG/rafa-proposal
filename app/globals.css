@@ -332,10 +332,7 @@ a:hover {
   display: none; /* Template uses pattern overlay instead */
 }
 
-/* Footer Styles - Moved to Footer.module.css */
-
 /* Hero Overlay - Original pattern texture with dark overlay */
-/* Moved to component CSS modules */
 
 /* ElastiStack - Drag Me Animation */
 #about *,
@@ -401,7 +398,6 @@ a:hover {
   display: block;
   width: 260px;
   height: 215px;
-  object-fit: cover;
 }
 
 .elasticstack li h4 {
@@ -428,7 +424,20 @@ a:hover {
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
 }
 
-/* About Section - Moved to AboutSection.module.css */
+/* iPad Air (820x1180) - Prevent ElastiStack overlap with title */
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
+  #about .elasticstack {
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    z-index: 1 !important;
+    position: relative !important;
+  }
+  
+  #about .elasticstack li {
+    position: absolute;
+    z-index: 1;
+  }
+}
 
 /* Mobile (below 600px) - Stack everything vertically */
 @media only screen and (max-width: 599px) {
@@ -441,33 +450,24 @@ a:hover {
   }
   
   .elasticstack {
-    width: 100%;
-    max-width: 280px;
-    height: 255px;
+    width: 240px;
+    height: 210px;
     margin: 0 auto 30px;
-    box-sizing: border-box;
   }
   
   .elasticstack li {
-    width: 100%;
-    max-width: 280px;
-    height: 255px;
+    width: 240px;
+    height: 210px;
     touch-action: pan-y;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     user-select: none;
-    box-sizing: border-box;
   }
   
   .elasticstack li img {
-    width: calc(100% - 20px);
-    max-width: 260px;
-    height: 215px;
-    pointer-events: none;
-    box-sizing: border-box;
+    width: 220px;
+    height: 160px;
   }
-  
-  /* About section styles moved to AboutSection.module.css */
   
   /* Ensure all columns respect container width */
   .container .column,
@@ -483,9 +483,7 @@ a:hover {
   }
 }
 
-/* Team Section - Moved to TeamSection.module.css */
-
-/* Parallax Sections - Moved to ParallaxSection.module.css, FactsSection.module.css, TestimonialsSection.module.css */
+/* Parallax Sections */
 
 .background-grid {
   position: absolute;
@@ -538,11 +536,6 @@ a:hover {
   }
 }
 
-/* Works Section - Moved to WorksSection.module.css */
-
-/* Action Section - Moved to ActionSection.module.css */
-
-/* Facts Section - Moved to FactsSection.module.css */
 
 /* Services Section */
 .services-list {
@@ -663,9 +656,6 @@ a:hover {
   }
 }
 
-/* Testimonials - Moved to TestimonialsSection.module.css */
-
-/* Blog Section - Moved to BlogSection.module.css */
 
 /* Contact Form */
 #contact {
@@ -760,8 +750,6 @@ a:hover {
 .padding-top-con {
   padding-top: 20px;
 }
-
-/* Footer Social - Moved to Footer.module.css */
 
 .hero-content {
   position: relative;
@@ -1197,8 +1185,6 @@ a:hover {
 .gap-3 {
   gap: 3rem;
 }
-
-/* Church Logo - Moved to Navigation.module.css and Footer.module.css */
 
 /* Icon Emoji */
 .icon-emoji {
@@ -2355,8 +2341,7 @@ html {
   padding-bottom: 30px;
 }
 
-/* Section Styles - Mockup page sections moved to component CSS modules */
-/* Keeping general section styles for other pages */
+/* Section Styles - Keeping general section styles for other pages */
 #contact,
 #worship,
 #ministries,
@@ -2385,8 +2370,6 @@ html {
   margin-top: 0;
 }
 
-/* Hero Section - Template Style - Moved to HeroSection.module.css */
-
 .hero-buttons {
   margin-top: 40px;
   z-index: 2000;
@@ -2403,8 +2386,6 @@ html {
   min-width: 180px;
 }
 
-
-/* Navigation - Template Style - Moved to Navigation.module.css */
 
 /* Image Wrapper and Styling */
 .image-wrapper {
@@ -2526,11 +2507,6 @@ html {
 }
 
 /* Professional Spacing and Typography */
-.container {
-  position: relative;
-}
-
-/* About section container styles moved to AboutSection.module.css */
 #worship .container,
 #ministries .container,
 #events .container {
@@ -2588,9 +2564,7 @@ html {
     padding: 0 30px;
   }
   
-  /* About section styles moved to AboutSection.module.css */
-  
-  /* General columns - but About section has specific overrides above */
+  /* General columns */
   .container .six.columns {
     width: 100%;
     margin-left: 0;
@@ -2677,8 +2651,6 @@ html {
     float: none;
   }
   
-  /* About section and Hero section styles moved to component CSS modules */
-  
   .hero-buttons {
     margin-top: 30px;
     flex-direction: column;
@@ -2693,7 +2665,6 @@ html {
     padding: 14px 24px;
   }
   
-  /* Navigation and section styles moved to component CSS modules */
   /* Sections - keeping general section styles for other pages */
   #worship,
   #ministries,
@@ -2763,8 +2734,6 @@ html {
     width: 220px;
     height: 220px;
   }
-  
-  /* Parallax, Facts, and Testimonials section styles moved to component CSS modules */
   
   /* Contact Form */
   #contact form {
