@@ -22,7 +22,7 @@ export default function BlogSection() {
             <div className={styles.blogPost} data-scrollreveal="enter bottom and move 50px over 1s">
               <div className={styles.blogIcon}><FileText size={32} /></div>
               <h6>Join Us for Worship</h6>
-              <Image src="/placeholder_1.webp" alt="Blog" width={300} height={200} className={styles.blogImg} loading="lazy" />
+              <Image src="/worship_services.webp" alt="Blog" width={300} height={200} className={styles.blogImg} loading="lazy" />
               <p><span>Every Sunday</span></p>
               <p>Join us in Malibu at 10 am on Sundays for Holy Eucharist with Music. All are welcome!</p>
               <a href="#"><p>read more</p></a>
@@ -32,7 +32,7 @@ export default function BlogSection() {
             <div className={styles.blogPost} data-scrollreveal="enter bottom and move 50px over 1s">
               <div className={styles.blogIcon}><FileText size={32} /></div>
               <h6>Community Event</h6>
-              <Image src="/placeholder_2.webp" alt="Blog" width={300} height={200} className={styles.blogImg} loading="lazy" />
+              <Image src="/event.webp" alt="Blog" width={300} height={200} className={styles.blogImg} loading="lazy" />
               <p><span>December 15, 2024</span></p>
               <p>Our annual Christmas potluck is coming up! All are welcome to join us for food and fellowship.</p>
               <a href="#"><p>read more</p></a>
@@ -42,7 +42,7 @@ export default function BlogSection() {
             <div className={styles.blogPost} data-scrollreveal="enter bottom and move 50px over 1s">
               <div className={styles.blogIcon}><FileText size={32} /></div>
               <h6>Ministry Spotlight</h6>
-              <Image src="/placeholder_3.webp" alt="Blog" width={300} height={200} className={styles.blogImg} loading="lazy" />
+              <Image src="/young_services.webp" alt="Blog" width={300} height={200} className={styles.blogImg} loading="lazy" />
               <p><span>December 10, 2024</span></p>
               <p>Learn about our youth ministry and how we're helping the next generation grow in faith.</p>
               <a href="#"><p>read more</p></a>

@@ -6,7 +6,7 @@ import styles from './css/TestimonialsSection.module.css';
 export default function TestimonialsSection() {
   return (
     <div id="sep2" className={styles.testimonialsWrapper}>
-      <div className={styles.parallax} style={{ backgroundImage: "url('/placeholder_3.webp')" }}></div>
+      <div className={styles.parallax} style={{ backgroundImage: "url('/prayer.webp')" }}></div>
       <div className={styles.justPattern}></div>
       <div className="container" data-scrollreveal="enter bottom and move 50px over 1s">
         <div className="sixteen columns">

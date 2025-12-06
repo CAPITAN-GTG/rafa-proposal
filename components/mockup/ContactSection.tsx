@@ -7,7 +7,7 @@ import styles from './css/ContactSection.module.css';
 export default function ContactSection() {
   return (
     <div id="contact" className={styles.contactSection}>
-      <div className={styles.parallax} style={{ backgroundImage: "url('/placeholder_4.webp')" }}></div>
+      <div className={styles.parallax} style={{ backgroundImage: "url('/christmas_tree.webp')" }}></div>
       <div className={styles.justPattern}></div>
       <div className="container">
         <div className="sixteen columns">

@@ -11,7 +11,6 @@ import TeamSection from '@/components/mockup/TeamSection';
 import ParallaxSection from '@/components/mockup/ParallaxSection';
 import WorksSection from '@/components/mockup/WorksSection';
 import ActionSection from '@/components/mockup/ActionSection';
-import FactsSection from '@/components/mockup/FactsSection';
 import ServicesSection from '@/components/mockup/ServicesSection';
 import TestimonialsSection from '@/components/mockup/TestimonialsSection';
 import BlogSection from '@/components/mockup/BlogSection';
@@ -32,13 +31,12 @@ export default function Mockup() {
       <TeamSection />
       <ParallaxSection
         id="sep"
-        backgroundImage="/placeholder_1.webp"
+        backgroundImage="/prayer_2.webp"
         quote="All are welcomed at St. Aidan's! Come as you are!"
         pattern={true}
       />
       <WorksSection />
       <ActionSection />
-      <FactsSection />
       <ServicesSection />
       <TestimonialsSection />
       <BlogSection />
