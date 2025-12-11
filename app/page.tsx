@@ -1,3 +1,5 @@
+import MockupDropdown from '@/components/MockupDropdown';
+
 export default function Home() {
   return (
     <div style={{minHeight:'100vh',display:'flex',alignItems:'center',justifyContent:'center',padding:'2rem'}}>
@@ -9,9 +11,7 @@ export default function Home() {
           <a href="/proposal" className="menu-btn">
             Audit and Proposal
           </a>
-          <a href="/mockup" className="menu-btn">
-            Mockup Website
-          </a>
+          <MockupDropdown />
           <a href="/schedule" className="menu-btn">
             Schedule a Call with Me
           </a>

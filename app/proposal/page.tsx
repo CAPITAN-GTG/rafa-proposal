@@ -231,17 +231,12 @@ export default function Proposal() {
           Design Mockups
         </h2>
         <p style={{marginBottom:'1rem'}}>
-          I've created comprehensive visual mockups using your actual church images to demonstrate the proposed design. Click any mockup below to view in detail.
+          I've created <strong>three different design mockups</strong> for you to choose from, each with a unique visual style and layout approach. These mockups demonstrate the front page layout and live previews page, showing how the design adapts to both desktop and mobile devices so you can get a clear idea of the visual direction and user experience.
         </p>
-        <ul style={{listStyle:'disc',paddingLeft:'2rem',marginBottom:'1rem'}}>
-          <li style={{marginBottom:'0.5rem'}}><strong>Homepage Mockup</strong> - Complete homepage design featuring your actual church photos, live widget, and all key sections</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>Live Widget Variations</strong> - 6 different Live Session widget designs with recommendations</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>Mobile Design</strong> - Responsive mobile view demonstration with touch-friendly interface</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>Navigation Structure</strong> - Complete site architecture, menu system, and information hierarchy</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>Events Section</strong> - Modern calendar view and event listing with registration</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>Give/Donate Page</strong> - Secure online giving system with multiple donation options</li>
-        </ul>
-        <p style={{marginTop:'1rem',fontStyle:'italic'}}>View mockups on the <Link href="/mockup" style={{color:'#0066cc'}}>Mockup Website</Link> page.</p>
+        <p style={{marginBottom:'1rem'}}>
+          Each mockup features your actual church images and showcases the responsive design, navigation structure, and overall aesthetic. This gives you a concrete sense of how the final website will look and feel across different devices.
+        </p>
+        <p style={{marginTop:'1rem',fontStyle:'italic'}}>View all three mockup options on the <Link href="/" style={{color:'#0066cc'}}>home page</Link> by clicking "Mockup Websites" in the menu.</p>
       </section>
 
       <section id="technical-approach" style={{marginBottom:'4rem'}}>
