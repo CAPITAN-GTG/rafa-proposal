@@ -42,7 +42,7 @@ export default function TeamSection() {
         </div>
         <div className="four columns" data-scrollreveal="enter bottom and move 50px over 1s">
           <div className={styles.teamMem}>
-            <Image src="/aboutus_5.webp" alt="Team Member" width={220} height={220} className={styles.teamImg} loading="lazy" />
+            <Image src="/greg.webp" alt="Team Member" width={220} height={220} className={styles.teamImg} loading="lazy" />
             <h6>Greg</h6>
             <div className={styles.socialTeam}>
               <ul className={styles.teamSocial}>
