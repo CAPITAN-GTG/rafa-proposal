@@ -1,0 +1,270 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroVideoWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.heroVideoWrapper :global(.hero-video) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(45, 55, 72, 0.6) 0%,
+    rgba(74, 85, 104, 0.5) 50%,
+    rgba(45, 55, 72, 0.7) 100%
+  );
+  background-blend-mode: multiply;
+  z-index: 1;
+}
+
+.heroOverlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/pattern.png');
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.heroText {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.heroText.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.heroTagline {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+.heroTitle {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.25rem;
+  line-height: 1.3;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.heroSubtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnSecondary {
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: 0.3px;
+}
+
+.btnPrimary {
+  background: white;
+  color: #7A9FB8;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btnPrimary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btnSecondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btnSecondary:hover {
+  background: white;
+  color: #7A9FB8;
+  transform: translateY(-3px);
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+.scrollArrow {
+  width: 2px;
+  height: 30px;
+  background: white;
+  position: relative;
+  animation: scrollDown 2s infinite;
+}
+
+.scrollArrow::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+}
+
+@keyframes scrollDown {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+  }
+
+  .heroContent {
+    padding: 0 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+
+  .heroSubtitle {
+    font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+    margin-bottom: 1.75rem;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    gap: 0.875rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .scrollIndicator {
+    bottom: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent {
+    padding: 0 1.25rem;
+  }
+
+  .heroTagline {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+
+  .heroTitle {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .heroSubtitle {
+    font-size: 0.9rem;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    padding: 0.7rem 1.75rem;
+    font-size: 0.85rem;
+    max-width: 100%;
+  }
+}
