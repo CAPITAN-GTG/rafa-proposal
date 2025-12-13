@@ -43,7 +43,7 @@ export default function TeamSection() {
         <div className="four columns" data-scrollreveal="enter bottom and move 50px over 1s">
           <div className={styles.teamMem}>
             <Image src="/greg.webp" alt="Team Member" width={220} height={220} className={styles.teamImg} loading="lazy" />
-            <h6>Greg</h6>
+            <h6>Greg Whitmore - Music Director</h6>
             <div className={styles.socialTeam}>
               <ul className={styles.teamSocial}>
                 <li className={styles.iconTeam}><a href="#"><Facebook size={16} /></a></li>

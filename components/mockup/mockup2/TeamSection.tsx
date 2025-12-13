@@ -22,8 +22,8 @@ const teamMembers = [
     image: '/aboutus_3.webp'
   },
   {
-    name: 'Greg',
-    role: 'Church Staff',
+    name: 'Greg Whitmore',
+    role: 'Music Director',
     image: '/greg.webp'
   }
 ];
