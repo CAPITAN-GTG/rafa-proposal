@@ -1,22 +1,35 @@
 'use client';
 
 import Link from 'next/link';
+import { useSmoothScroll } from '@/hooks/useSmoothScroll';
+import Navigation from '@/components/mockup/mockup3/Navigation';
+import HeroSection from '@/components/mockup/mockup3/HeroSection';
+import AboutSection from '@/components/mockup/mockup3/AboutSection';
+import LivestreamSection from '@/components/mockup/mockup3/LivestreamSection';
+import ServicesSection from '@/components/mockup/mockup3/ServicesSection';
+import EventsSection from '@/components/mockup/mockup3/EventsSection';
+import TeamSection from '@/components/mockup/mockup3/TeamSection';
+import ContactSection from '@/components/mockup/mockup3/ContactSection';
+import Footer from '@/components/mockup/mockup3/Footer';
 
 export default function Mockup3() {
+  useSmoothScroll({ duration: 1200 });
+
   return (
-    <div style={{minHeight:'100vh',display:'flex',alignItems:'center',justifyContent:'center',padding:'2rem'}}>
-      <main className="container-narrow" style={{textAlign:'center'}}>
-        <h1 className="heading-1 mb-3">
-          Mockup 3
-        </h1>
-        <p style={{marginBottom:'2rem',color:'var(--text-medium)'}}>
-          This mockup page is coming soon.
-        </p>
-        <Link href="/" className="menu-btn">
-          Back to Menu
-        </Link>
-      </main>
+    <div style={{minWidth:'320px'}}>
+      <Navigation />
+      <HeroSection />
+      <AboutSection />
+      <LivestreamSection />
+      <ServicesSection />
+      <EventsSection />
+      <TeamSection />
+      <ContactSection />
+      <Footer />
+
+      <Link href="/" className="fixed-btn">
+        Back to Menu
+      </Link>
     </div>
   );
 }
-

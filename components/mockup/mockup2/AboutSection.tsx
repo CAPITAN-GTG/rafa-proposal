@@ -22,7 +22,7 @@ export default function AboutSection() {
           <div className={styles.aboutContent}>
             <div className={styles.aboutImage}>
               <Image
-                src="/aboutus_4.webp"
+                src="/inside_church.webp"
                 alt="Church community"
                 width={600}
                 height={400}

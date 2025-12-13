@@ -9,7 +9,7 @@ const teamMembers = [
   {
     name: 'Rev. Dr. Joyce Stickney',
     role: 'Rector',
-    image: '/Joyce.webp'
+    image: '/aboutus_1.webp'
   },
   {
     name: 'Ed Milkovitch',

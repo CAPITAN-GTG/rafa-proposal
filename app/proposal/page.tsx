@@ -236,6 +236,9 @@ export default function Proposal() {
         <p style={{marginBottom:'1rem'}}>
           Each mockup features your actual church images and showcases the responsive design, navigation structure, and overall aesthetic. This gives you a concrete sense of how the final website will look and feel across different devices.
         </p>
+        <p style={{marginBottom:'1rem',padding:'1rem',background:'#f5f5f5',borderRadius:'8px',fontStyle:'italic'}}>
+          <strong>Note:</strong> Any section of the home page can be removed as desired. The mockups show a comprehensive layout, but we can customize the homepage to include only the sections that best serve your needs.
+        </p>
         <p style={{marginTop:'1rem',fontStyle:'italic'}}>View all three mockup options on the <Link href="/" style={{color:'#0066cc'}}>home page</Link> by clicking "Mockup Websites" in the menu.</p>
       </section>
 
