@@ -1,85 +1,104 @@
 'use client';
 
-import Image from 'next/image';
-import { Calendar, MapPin, Clock } from 'lucide-react';
+import { useState } from 'react';
+import Link from 'next/link';
 import styles from './css/EventsSection.module.css';
 
 const events = [
   {
-    image: '/event.webp',
-    title: 'Christmas Eve Service',
-    date: 'December 24, 2024',
-    time: '7:00 PM',
-    location: 'Main Sanctuary',
-    description: 'Join us for a special Christmas Eve celebration',
+    month: 'Apr',
+    day: '24',
+    title: 'Church Leaders meeting',
+    time: '1:00 pm - 7:00 pm',
+    link: '#'
   },
   {
-    image: '/community_outreach.webp',
-    title: 'Community Outreach',
-    date: 'December 15, 2024',
-    time: '2:00 PM',
-    location: 'Community Center',
-    description: 'Serving our local community together',
+    month: 'Apr',
+    day: '09',
+    title: 'Prayer Day',
+    time: '6:00 pm - 8:00 pm',
+    link: '#'
   },
   {
-    image: '/choir.webp',
-    title: 'Choir Concert',
-    date: 'December 20, 2024',
-    time: '7:30 PM',
-    location: 'Main Sanctuary',
-    description: 'Annual Christmas choir performance',
+    month: 'Mar',
+    day: '02',
+    title: 'Monthly Band Tryouts',
+    time: '3:00 pm - 7:00 pm',
+    link: '#'
   },
+  {
+    month: 'Jan',
+    day: '31',
+    title: 'WOW Conference',
+    time: '10:00 am - 2:00 pm',
+    link: '#'
+  },
+  {
+    month: 'Jun',
+    day: '24',
+    title: 'Seniors Bible Study',
+    time: '4:00 pm - 6:00 pm',
+    link: '#'
+  }
 ];
 
 export default function EventsSection() {
-  return (
-    <section id="events" className={styles.eventsSection}>
-      <div className={styles.container}>
-        <div className={styles.header}>
-          <h2 className={styles.title}>Upcoming Events</h2>
-          <p className={styles.subtitle}>
-            Join us for worship, fellowship, and community events
-          </p>
-        </div>
+  const [isPlaying, setIsPlaying] = useState(false);
 
-        <div className={styles.eventsGrid}>
-          {events.map((event, index) => (
-            <div key={index} className={styles.eventCard}>
-              <div className={styles.imageWrapper}>
-                <Image
-                  src={event.image}
-                  alt={event.title}
-                  width={400}
-                  height={250}
-                  className={styles.image}
-                />
-                <div className={styles.dateBadge}>
-                  <Calendar size={18} />
-                  <span>{event.date}</span>
-                </div>
-              </div>
-              <div className={styles.eventContent}>
-                <h3 className={styles.eventTitle}>{event.title}</h3>
-                <p className={styles.eventDescription}>{event.description}</p>
-                <div className={styles.eventInfo}>
-                  <div className={styles.infoItem}>
-                    <Clock size={16} />
-                    <span>{event.time}</span>
-                  </div>
-                  <div className={styles.infoItem}>
-                    <MapPin size={16} />
-                    <span>{event.location}</span>
+  return (
+    <div className={styles.section}>
+      <div className={styles.contentWrap}>
+        <div className={styles.columns}>
+          <div className={styles.column}>
+            <div className={styles.sectionInner}>
+              <h6 className={styles.subtitle}>Worship</h6>
+              <h2 className={styles.title}>The sound of our worship</h2>
+              <div className={styles.audioPlayer}>
+                <div className={styles.playerControls}>
+                  <button
+                    className={styles.playButton}
+                    onClick={() => setIsPlaying(!isPlaying)}
+                    aria-label={isPlaying ? 'Pause' : 'Play'}
+                  >
+                    {isPlaying ? '⏸' : '▶'}
+                  </button>
+                  <div className={styles.trackInfo}>
+                    <p className={styles.trackTitle}>Energy</p>
+                    <p className={styles.trackArtist}>By Young & Free</p>
                   </div>
                 </div>
-                <a href="#contact" className={styles.eventButton}>
-                  Learn More
-                </a>
+                <div className={styles.progressBar}>
+                  <div className={styles.progress} style={{ width: '30%' }}></div>
+                </div>
               </div>
             </div>
-          ))}
+          </div>
+          <div className={styles.column}>
+            <div className={styles.sectionInner}>
+              <h6 className={styles.subtitle}>Upcoming Events</h6>
+              <h2 className={styles.title}>Conferences & Events</h2>
+              <div className={styles.eventsWrap}>
+                {events.map((event, index) => (
+                  <div key={index} className={styles.eventItem}>
+                    <span className={styles.eventDate}>
+                      <span className={styles.eventMonth}>{event.month}</span>
+                      <span className={styles.eventDay}>{event.day}</span>
+                    </span>
+                    <h6 className={styles.eventTitle}>
+                      <Link href={event.link}>{event.title}</Link>
+                    </h6>
+                    <span className={styles.eventTime}>{event.time}</span>
+                    <span className={styles.eventDetails}>
+                      <Link href={event.link}>Details</Link>
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

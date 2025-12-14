@@ -1,151 +1,210 @@
-.eventsSection {
-  padding: 5rem 0;
-  background: white;
+.section {
+  padding: 100px 0;
+  background: #f9f9f9;
 }
 
-.container {
+.contentWrap {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 20px;
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 3rem;
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
 }
 
-.title {
-  font-size: clamp(2rem, 4vw, 2.5rem);
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 1rem;
+.column {
+  width: 100%;
+}
+
+.sectionInner {
+  padding: 20px 0;
 }
 
 .subtitle {
-  font-size: 1.125rem;
-  color: #6c757d;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8b7355;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
 }
 
-.eventsGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-.eventCard {
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+.audioPlayer {
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.eventCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-
-.imageWrapper {
-  position: relative;
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.eventCard:hover .image {
-  transform: scale(1.05);
-}
-
-.dateBadge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
+.playerControls {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-weight: 600;
-  font-size: 0.875rem;
-  color: #2c3e50;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
-.eventContent {
-  padding: 1.5rem;
+.playButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #8b7355;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.playButton:hover {
+  background: #6b5a42;
+}
+
+.trackInfo {
+  flex: 1;
+}
+
+.trackTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.trackArtist {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.progressBar {
+  width: 100%;
+  height: 4px;
+  background: #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #8b7355;
+  transition: width 0.3s;
+}
+
+.eventsWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eventItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.eventItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.eventDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  padding: 10px;
+  background: #8b7355;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.eventMonth {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.eventDay {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .eventTitle {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 0.75rem;
-}
-
-.eventDescription {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #6c757d;
-  margin-bottom: 1rem;
-}
-
-.eventInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.infoItem {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9375rem;
-  color: #6c757d;
-}
-
-.infoItem svg {
-  color: #FFB88C;
-}
-
-.eventButton {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: #FFB88C;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
+  flex: 1;
+  font-size: 18px;
   font-weight: 600;
-  transition: all 0.3s ease;
+  margin: 0;
 }
 
-.eventButton:hover {
-  background: #FFA07A;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 184, 140, 0.3);
+.eventTitle a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-@media (max-width: 968px) {
-  .eventsGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.eventTitle a:hover {
+  color: #8b7355;
+}
+
+.eventTime {
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.eventDetails {
+  font-size: 14px;
+}
+
+.eventDetails a {
+  color: #8b7355;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.eventDetails a:hover {
+  color: #6b5a42;
 }
 
 @media (max-width: 768px) {
-  .eventsSection {
-    padding: 3rem 0;
+  .section {
+    padding: 60px 0;
   }
 
-  .eventsGrid {
+  .columns {
     grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .eventItem {
+    flex-wrap: wrap;
   }
 }
 

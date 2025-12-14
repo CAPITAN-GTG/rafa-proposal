@@ -1,0 +1,314 @@
+.sliderWrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slideContent {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #fff;
+  max-width: 1200px;
+  padding: 0 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slideTitle {
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: -2px;
+  color: #fff;
+}
+
+.slideSubtitle {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.slideDescription {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slideButtons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.slideButton {
+  padding: 16px 38px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.slideButton.filled {
+  background: #8b7355;
+  color: #fff;
+}
+
+.slideButton.filled:hover {
+  background: #6b5a42;
+}
+
+.slideButton.border {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.slideButton.border:hover {
+  background: #fff;
+  color: #333;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.countdownItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #fff;
+  padding: 20px 15px;
+  min-width: 80px;
+}
+
+.countdownDigits {
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.countdownLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.countdownSeparator {
+  font-size: 42px;
+  font-weight: 300;
+  padding: 0 5px;
+}
+
+.sliderDots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0;
+}
+
+.dot.active {
+  background: #fff;
+}
+
+@media (max-width: 480px) {
+  .sliderWrap {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .slideTitle {
+    font-size: 28px;
+  }
+
+  .slideSubtitle {
+    font-size: 22px;
+  }
+
+  .slideDescription {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+
+  .countdown {
+    gap: 3px;
+  }
+
+  .countdownItem {
+    min-width: 40px;
+    padding: 6px 3px;
+    border-width: 2px;
+  }
+
+  .countdownDigits {
+    font-size: 18px;
+  }
+
+  .countdownLabel {
+    font-size: 8px;
+  }
+
+  .countdownSeparator {
+    font-size: 16px;
+    padding: 0 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sliderWrap {
+    height: 70vh;
+    min-height: 500px;
+  }
+
+  .slideContent {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+
+  .slideTitle {
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+
+  .slideSubtitle {
+    font-size: 28px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+
+  .slideDescription {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .countdown {
+    flex-wrap: nowrap;
+    gap: 4px;
+    margin: 20px 0;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 0 10px;
+  }
+
+  .countdownItem {
+    min-width: 45px;
+    padding: 8px 4px;
+    border-width: 2px;
+    flex-shrink: 0;
+  }
+
+  .countdownDigits {
+    font-size: 20px;
+  }
+
+  .countdownLabel {
+    font-size: 9px;
+  }
+
+  .countdownSeparator {
+    font-size: 18px;
+    padding: 0 2px;
+    flex-shrink: 0;
+  }
+
+  .slideButtons {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .slideButton {
+    padding: 14px 24px;
+    font-size: 10px;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .sliderDots {
+    bottom: 20px;
+  }
+}
+

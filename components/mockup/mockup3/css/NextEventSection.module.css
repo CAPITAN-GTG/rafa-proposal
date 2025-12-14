@@ -1,0 +1,173 @@
+.section {
+  background: #2c2c2c;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.contentWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.column {
+  text-align: center;
+}
+
+.sectionInner {
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdownInner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.countdownItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #8b7355;
+  padding: 20px 15px;
+  min-width: 80px;
+}
+
+.countdownDigits {
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.countdownLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.countdownSeparator {
+  font-size: 42px;
+  font-weight: 300;
+  color: #8b7355;
+}
+
+.button {
+  display: inline-block;
+  padding: 16px 45px;
+  border: 2px solid #8b7355;
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: #8b7355;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .contentWrap {
+    padding: 0 15px;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .column {
+    text-align: center;
+  }
+
+  .sectionInner {
+    padding: 15px 0;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .countdown {
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 10px;
+  }
+
+  .countdownInner {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .countdownItem {
+    min-width: 45px;
+    padding: 8px 4px;
+    border-width: 2px;
+    flex-shrink: 0;
+  }
+
+  .countdownDigits {
+    font-size: 20px;
+  }
+
+  .countdownLabel {
+    font-size: 9px;
+  }
+
+  .countdownSeparator {
+    font-size: 18px;
+    padding: 0 2px;
+    flex-shrink: 0;
+  }
+
+  .button {
+    padding: 14px 30px;
+    font-size: 10px;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
