@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import ProposalNav from '@/components/ProposalNav';
+import ProposalBackToTop from '@/components/ProposalBackToTop';
 
 export default function Proposal() {
   return (
-    <div style={{maxWidth:'900px',margin:'0 auto',padding:'2rem 1rem'}}>
+    <div id="top" style={{maxWidth:'900px',margin:'0 auto',padding:'2rem 1rem',position:'relative'}}>
       <nav style={{marginBottom:'2rem'}}>
         <Link href="/" className="back-link">← Back to Menu</Link>
       </nav>
@@ -22,47 +23,50 @@ export default function Proposal() {
 
       <ProposalNav />
 
-      <section id="executive-summary" style={{marginBottom:'4rem'}}>
-        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem'}}>
+      <section id="executive-summary" style={{marginBottom:'4rem',paddingBottom:'4rem',borderBottom:'1px solid #eaeaea'}}>
+        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem',display:'flex',alignItems:'center',flexWrap:'wrap'}}>
           Executive Summary
+          <ProposalBackToTop />
         </h2>
         <p style={{marginBottom:'1rem',fontSize:'1.125rem'}}>
-          St. Aidan's Episcopal Church currently operates a website that, while functional, does not fully reflect the vibrant, welcoming, and inclusive community it represents. This proposal outlines a comprehensive redesign that will modernize your online presence, improve user experience, and better serve our congregation and community.
+          I'm offering a competitive <strong>$4,000</strong> for a full website redesign—and I'm including <strong>Tithely + Breeze ChMS</strong>. Breeze has merged with Tithely into one unified church software (<a href="https://get.tithe.ly/breezechms" target="_blank" rel="noopener noreferrer" style={{color:'#0066cc'}}>learn more</a>). I'll implement this for you so giving, people, and church management live in one place. When I add Tithely, you'll have the option to use online giving and church management (events, people) from your site. The project is scoped at <strong>20 hours</strong> with a focus on quality and a clean, consistent look across the site.
+        </p>
+        <p style={{marginBottom:'1rem',fontSize:'1.125rem'}}>
+          You get interactive components and custom textures and graphics that are <strong>reusable across your site</strong>—so the whole site feels cohesive, not pieced together. I don't use generic templates; I build custom assets that you can keep using as you grow.
         </p>
         
         <h3 style={{fontSize:'1.5rem',marginTop:'2rem',marginBottom:'1rem',fontWeight:'600'}}>Key Goals</h3>
         <ul style={{listStyle:'disc',paddingLeft:'2rem',marginBottom:'1rem'}}>
-          <li style={{marginBottom:'0.5rem'}}>Create a modern, welcoming online presence that reflects St. Aidan's values</li>
-          <li style={{marginBottom:'0.5rem'}}>Improve accessibility and user experience across all devices</li>
-          <li style={{marginBottom:'0.5rem'}}>Make livestream services prominently accessible (HIGH PRIORITY)</li>
-          <li style={{marginBottom:'0.5rem'}}>Simplify online giving and stewardship engagement</li>
-          <li style={{marginBottom:'0.5rem'}}>Enhance content organization and navigation</li>
-          <li style={{marginBottom:'0.5rem'}}>Optimize site performance for faster loading times</li>
-          <li style={{marginBottom:'0.5rem'}}>Provide an easy-to-manage content management system</li>
+          <li style={{marginBottom:'0.5rem'}}>Modern, welcoming site that reflects St. Aidan's values</li>
+          <li style={{marginBottom:'0.5rem'}}>Livestream front and center (high priority)</li>
+          <li style={{marginBottom:'0.5rem'}}>Tithely + Breeze ChMS for giving and church management</li>
+          <li style={{marginBottom:'0.5rem'}}>Clear navigation and fast load times</li>
+          <li style={{marginBottom:'0.5rem'}}>Reusable custom design system for the whole site</li>
         </ul>
 
         <div style={{display:'flex',flexWrap:'wrap',gap:'2rem',marginTop:'2rem'}}>
           <div style={{flex:'1',minWidth:'200px',padding:'1.5rem',background:'#f5f5f5',borderRadius:'8px',textAlign:'center'}}>
-            <div style={{fontSize:'2rem',fontWeight:'600',color:'#0066cc',marginBottom:'0.5rem'}}>3x Faster</div>
-            <div>Load times reduced from 5-8 seconds to under 3 seconds</div>
+            <div style={{fontSize:'2rem',fontWeight:'600',color:'#0066cc',marginBottom:'0.5rem'}}>$4,000</div>
+            <div>Competitive price, Tithely + Breeze included</div>
           </div>
           <div style={{flex:'1',minWidth:'200px',padding:'1.5rem',background:'#f5f5f5',borderRadius:'8px',textAlign:'center'}}>
-            <div style={{fontSize:'2rem',fontWeight:'600',color:'#0066cc',marginBottom:'0.5rem'}}>Mobile-First</div>
-            <div>Fully responsive design optimized for all devices</div>
+            <div style={{fontSize:'2rem',fontWeight:'600',color:'#0066cc',marginBottom:'0.5rem'}}>20h</div>
+            <div>Scoped work with ensured quality</div>
           </div>
           <div style={{flex:'1',minWidth:'200px',padding:'1.5rem',background:'#f5f5f5',borderRadius:'8px',textAlign:'center'}}>
-            <div style={{fontSize:'2rem',fontWeight:'600',color:'#0066cc',marginBottom:'0.5rem'}}>User-Focused</div>
-            <div>Clear navigation and prominent calls-to-action</div>
+            <div style={{fontSize:'2rem',fontWeight:'600',color:'#0066cc',marginBottom:'0.5rem'}}>Custom Assets</div>
+            <div>Reusable graphics and components site-wide</div>
           </div>
         </div>
       </section>
 
-      <section id="current-site-audit" style={{marginBottom:'4rem'}}>
-        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem'}}>
+      <section id="current-site-audit" style={{marginBottom:'4rem',paddingBottom:'4rem',borderBottom:'1px solid #eaeaea'}}>
+        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem',display:'flex',alignItems:'center',flexWrap:'wrap'}}>
           Current Website Audit
+          <ProposalBackToTop />
         </h2>
         <p style={{marginBottom:'1rem'}}>
-          I conducted a comprehensive audit of <a href="https://www.staidanschurch.org/" target="_blank" rel="noopener noreferrer" style={{color:'#0066cc'}}>https://www.staidanschurch.org/</a> and identified several areas requiring improvement:
+          I reviewed <a href="https://www.staidanschurch.org/" target="_blank" rel="noopener noreferrer" style={{color:'#0066cc'}}>staidanschurch.org</a> and identified several areas requiring improvement:
         </p>
 
         <h3 style={{fontSize:'1.5rem',marginTop:'2rem',marginBottom:'1rem',fontWeight:'600'}}>Design Weaknesses</h3>
@@ -165,21 +169,22 @@ export default function Proposal() {
                 <td style={{padding:'1rem',border:'1px solid #ddd'}}>Multi-page, organized</td>
               </tr>
               <tr>
-                <td style={{padding:'1rem',border:'1px solid #ddd'}}>Online Giving</td>
+                <td style={{padding:'1rem',border:'1px solid #ddd'}}>Online Giving & ChMS</td>
                 <td style={{padding:'1rem',border:'1px solid #ddd'}}>Confusing PDF</td>
-                <td style={{padding:'1rem',border:'1px solid #ddd'}}>Simple, secure, 1-click</td>
+                <td style={{padding:'1rem',border:'1px solid #ddd'}}>Tithely + Breeze ChMS, unified</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section id="proposed-solution" style={{marginBottom:'4rem'}}>
-        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem'}}>
+      <section id="proposed-solution" style={{marginBottom:'4rem',paddingBottom:'4rem',borderBottom:'1px solid #eaeaea'}}>
+        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem',display:'flex',alignItems:'center',flexWrap:'wrap'}}>
           Proposed Solution
+          <ProposalBackToTop />
         </h2>
         <p style={{marginBottom:'1rem'}}>
-          I propose a complete website redesign that addresses all identified issues while creating a modern, inspiring online presence that truly reflects St. Aidan's mission and values.
+          A full redesign that fixes the audit issues: modern site, Tithely + Breeze ChMS integration, clean and fast. Content and giving are managed through Tithely; no custom admin to build or learn.
         </p>
 
         <h3 style={{fontSize:'1.5rem',marginTop:'2rem',marginBottom:'1rem',fontWeight:'600'}}>High Priority Features</h3>
@@ -189,9 +194,8 @@ export default function Proposal() {
           <li style={{marginBottom:'0.5rem'}}><strong>Clear Navigation</strong> - Intuitive menu structure with proper information architecture</li>
           <li style={{marginBottom:'0.5rem'}}><strong>Fast Performance</strong> - Optimized loading times under 3 seconds on all devices</li>
           <li style={{marginBottom:'0.5rem'}}><strong>Modern Design</strong> - Clean, inspiring, professional aesthetics</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>Online Giving</strong> - Simple, secure donation system with Stripe integration</li>
+          <li style={{marginBottom:'0.5rem'}}><strong>Online Giving & ChMS</strong> - Tithely + Breeze ChMS (<a href="https://get.tithe.ly/breezechms" target="_blank" rel="noopener noreferrer" style={{color:'#0066cc'}}>unified church software</a>)—option for giving and ChMS (events, people) from the site</li>
           <li style={{marginBottom:'0.5rem'}}><strong>Service Information</strong> - Times, location, and details clearly displayed</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>Easy Content Management</strong> - User-friendly system for updating content</li>
         </ul>
 
         <h3 style={{fontSize:'1.5rem',marginTop:'2rem',marginBottom:'1rem',fontWeight:'600'}}>Proposed Site Structure</h3>
@@ -219,32 +223,34 @@ export default function Proposal() {
         </ul>
 
         <h3 style={{fontSize:'1.5rem',marginTop:'2rem',marginBottom:'1rem',fontWeight:'600'}}>Design Philosophy</h3>
+        <p style={{marginBottom:'1rem'}}>
+          I build <strong>interactive components and custom textures/graphics</strong> that are reusable across your site—so every page shares the same look and feel. No generic templates. You get a real design system that keeps the site cohesive as you add content later.
+        </p>
         <ul style={{listStyle:'disc',paddingLeft:'2rem',marginBottom:'1rem'}}>
-          <li style={{marginBottom:'0.5rem'}}><strong>Welcoming</strong> - Warm colors, friendly imagery, inclusive messaging that invites all to participate</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>Modern</strong> - Contemporary design patterns while respecting traditional Episcopal aesthetics</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>Accessible</strong> - WCAG 2.1 AA compliant, easy to read and navigate for all visitors</li>
+          <li style={{marginBottom:'0.5rem'}}><strong>Welcoming</strong> - Warm, inclusive, easy to navigate</li>
+          <li style={{marginBottom:'0.5rem'}}><strong>Modern</strong> - Clean and professional</li>
+          <li style={{marginBottom:'0.5rem'}}><strong>Accessible</strong> - Readable and usable for everyone</li>
         </ul>
       </section>
 
-      <section id="design-mockups" style={{marginBottom:'4rem'}}>
-        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem'}}>
+      <section id="design-mockups" style={{marginBottom:'4rem',paddingBottom:'4rem',borderBottom:'1px solid #eaeaea'}}>
+        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem',display:'flex',alignItems:'center',flexWrap:'wrap'}}>
           Design Mockups
+          <ProposalBackToTop />
         </h2>
         <p style={{marginBottom:'1rem'}}>
-          I've created <strong>three different design mockups</strong> for you to choose from, each with a unique visual style and layout approach. These mockups demonstrate the front page layout and live previews page, showing how the design adapts to both desktop and mobile devices so you can get a clear idea of the visual direction and user experience.
-        </p>
-        <p style={{marginBottom:'1rem'}}>
-          Each mockup features your actual church images and showcases the responsive design, navigation structure, and overall aesthetic. This gives you a concrete sense of how the final website will look and feel across different devices.
+          I've created <strong>three design mockups</strong> to choose from—each with a different look and layout. They show the front page and how it works on desktop and mobile. The components and visuals in these mockups are the kind of reusable assets I build into the live site so the whole site stays consistent.
         </p>
         <p style={{marginBottom:'1rem',padding:'1rem',background:'#f5f5f5',borderRadius:'8px',fontStyle:'italic'}}>
-          <strong>Note:</strong> Any section of the home page can be removed as desired. The mockups show a comprehensive layout, but we can customize the homepage to include only the sections that best serve your needs.
+          <strong>Note:</strong> Any section of the home page can be removed as desired. The mockups show a comprehensive layout, but I can customize the homepage to include only the sections that best serve your needs.
         </p>
         <p style={{marginTop:'1rem',fontStyle:'italic'}}>View all three mockup options on the <Link href="/" style={{color:'#0066cc'}}>home page</Link> by clicking "Mockup Websites" in the menu.</p>
       </section>
 
-      <section id="technical-approach" style={{marginBottom:'4rem'}}>
-        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem'}}>
+      <section id="technical-approach" style={{marginBottom:'4rem',paddingBottom:'4rem',borderBottom:'1px solid #eaeaea'}}>
+        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem',display:'flex',alignItems:'center',flexWrap:'wrap'}}>
           Technical Approach
+          <ProposalBackToTop />
         </h2>
 
         <h3 style={{fontSize:'1.5rem',marginTop:'2rem',marginBottom:'1rem',fontWeight:'600'}}>Technology Stack</h3>
@@ -259,15 +265,12 @@ export default function Proposal() {
 
         <h4 style={{fontSize:'1.25rem',marginTop:'1.5rem',marginBottom:'0.75rem',fontWeight:'600'}}>Backend</h4>
         <ul style={{listStyle:'disc',paddingLeft:'2rem',marginBottom:'1rem'}}>
-          <li style={{marginBottom:'0.5rem'}}><strong>FastAPI (Python)</strong> - Fast, modern API framework</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>MongoDB</strong> - Flexible content database</li>
           <li style={{marginBottom:'0.5rem'}}><strong>RESTful API</strong> - Standard, scalable architecture</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>Secure Authentication</strong> - For admin access</li>
         </ul>
 
         <h4 style={{fontSize:'1.25rem',marginTop:'1.5rem',marginBottom:'0.75rem',fontWeight:'600'}}>Integrations</h4>
         <ul style={{listStyle:'disc',paddingLeft:'2rem',marginBottom:'1rem'}}>
-          <li style={{marginBottom:'0.5rem'}}><strong>Stripe</strong> - Secure online donations</li>
+          <li style={{marginBottom:'0.5rem'}}><strong>Tithely + Breeze ChMS</strong> - You'll have the option for online giving and ChMS (events, people) from the site (<a href="https://get.tithe.ly/breezechms" target="_blank" rel="noopener noreferrer" style={{color:'#0066cc'}}>unified platform</a>)</li>
           <li style={{marginBottom:'0.5rem'}}><strong>Facebook/YouTube</strong> - Livestream embedding</li>
           <li style={{marginBottom:'0.5rem'}}><strong>Google Calendar</strong> - Events synchronization</li>
           <li style={{marginBottom:'0.5rem'}}><strong>Mailchimp/SendGrid</strong> - Newsletter integration</li>
@@ -287,32 +290,19 @@ export default function Proposal() {
           <li style={{marginBottom:'0.5rem'}}><strong>Mobile-First</strong> - Perfect on phones, tablets, desktops</li>
           <li style={{marginBottom:'0.5rem'}}><strong>SEO Optimized</strong> - Better search engine rankings</li>
           <li style={{marginBottom:'0.5rem'}}><strong>Accessibility</strong> - WCAG 2.1 AA compliant</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>Content Management</strong> - Easy-to-use admin interface</li>
           <li style={{marginBottom:'0.5rem'}}><strong>Analytics</strong> - Track visitors and engagement</li>
           <li style={{marginBottom:'0.5rem'}}><strong>Security</strong> - SSL, secure payments, data protection</li>
-          <li style={{marginBottom:'0.5rem'}}><strong>Scalable</strong> - Grows with our congregation</li>
-        </ul>
-
-        <h3 style={{fontSize:'1.5rem',marginTop:'2rem',marginBottom:'1rem',fontWeight:'600'}}>Easy Content Management</h3>
-        <p style={{marginBottom:'1rem'}}>
-          You'll have a user-friendly admin interface to manage your website content without technical knowledge:
-        </p>
-        <ul style={{listStyle:'disc',paddingLeft:'2rem',marginBottom:'1rem'}}>
-          <li style={{marginBottom:'0.5rem'}}>Update service times, events, and announcements</li>
-          <li style={{marginBottom:'0.5rem'}}>Add photos and videos to galleries</li>
-          <li style={{marginBottom:'0.5rem'}}>Manage staff directory and ministry pages</li>
-          <li style={{marginBottom:'0.5rem'}}>Post sermons and blog articles</li>
-          <li style={{marginBottom:'0.5rem'}}>View donation reports and analytics</li>
-          <li style={{marginBottom:'0.5rem'}}>No coding required - simple point-and-click interface</li>
+          <li style={{marginBottom:'0.5rem'}}><strong>Scalable</strong> - Grows with your congregation</li>
         </ul>
       </section>
 
-      <section id="timeline" style={{marginBottom:'4rem'}}>
-        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem'}}>
+      <section id="timeline" style={{marginBottom:'4rem',paddingBottom:'4rem',borderBottom:'1px solid #eaeaea'}}>
+        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem',display:'flex',alignItems:'center',flexWrap:'wrap'}}>
           Timeline & Implementation Phases
+          <ProposalBackToTop />
         </h2>
         <p style={{marginBottom:'1rem'}}>
-          I recommend a phased approach to ensure quality and allow for feedback at each stage. Total estimated timeline: <strong>4-6 weeks</strong>
+          Phased approach so you can give feedback along the way. Total scope: <strong>20 hours</strong> of work—typically 4–6 weeks depending on availability.
         </p>
 
         <div style={{marginTop:'2rem'}}>
@@ -345,7 +335,7 @@ export default function Proposal() {
           <h3 style={{fontSize:'1.5rem',marginBottom:'1rem',fontWeight:'600'}}>Phase 3: Interactive Features & Integrations</h3>
           <p style={{marginBottom:'0.5rem'}}><strong>Duration:</strong> 1 week</p>
           <ul style={{listStyle:'disc',paddingLeft:'2rem',marginBottom:'1.5rem'}}>
-            <li style={{marginBottom:'0.5rem'}}>Online giving integration (Stripe)</li>
+            <li style={{marginBottom:'0.5rem'}}>Tithely + Breeze ChMS integration</li>
             <li style={{marginBottom:'0.5rem'}}>Livestream embedding and setup</li>
             <li style={{marginBottom:'0.5rem'}}>Event registration system</li>
             <li style={{marginBottom:'0.5rem'}}>Newsletter signup integration</li>
@@ -364,7 +354,7 @@ export default function Proposal() {
             <li style={{marginBottom:'0.5rem'}}>SEO setup and optimization</li>
             <li style={{marginBottom:'0.5rem'}}>Accessibility audit and fixes</li>
             <li style={{marginBottom:'0.5rem'}}>Content migration and review</li>
-            <li style={{marginBottom:'0.5rem'}}>Staff training on CMS</li>
+            <li style={{marginBottom:'0.5rem'}}>Staff training on site and Tithely</li>
             <li style={{marginBottom:'0.5rem'}}>Launch and go-live!</li>
           </ul>
           <p style={{marginBottom:'1.5rem',fontStyle:'italic'}}><strong>Deliverable:</strong> Fully tested, optimized, and launched website</p>
@@ -392,80 +382,32 @@ export default function Proposal() {
         </div>
       </section>
 
-      <section id="investment" style={{marginBottom:'4rem'}}>
-        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem'}}>
+      <section id="investment" style={{marginBottom:'4rem',paddingBottom:'4rem',borderBottom:'1px solid #eaeaea'}}>
+        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem',display:'flex',alignItems:'center',flexWrap:'wrap'}}>
           Investment
+          <ProposalBackToTop />
         </h2>
-        <p style={{marginBottom:'2rem'}}>
-          This comprehensive website redesign represents a significant upgrade to your online presence and ministry outreach capabilities.
+        <p style={{marginBottom:'1rem'}}>
+          One price: <strong>$4,000</strong> (20h, Tithely + Breeze included). See Executive Summary for full scope.
+        </p>
+        <p style={{marginBottom:'2rem',fontSize:'0.95rem',color:'#555'}}>
+          Lower quotes (e.g. $2,500) often mean templates and no real platform. Here you get custom components, reusable graphics for a consistent look, and Tithely integration—a site you can grow with.
         </p>
 
-        <div className="investment-cards-grid" style={{marginBottom:'3rem'}}>
-          <div className="investment-card">
-            <div className="investment-card-header">
-              <h3 style={{fontSize:'1.25rem',marginBottom:'0.75rem',fontWeight:'600'}}>Essential</h3>
-              <div style={{fontSize:'2rem',fontWeight:'600',color:'#0066cc',marginBottom:'0.5rem'}}>$5,800</div>
-              <p style={{marginBottom:'0.75rem',color:'#666',fontSize:'0.875rem'}}>One-time investment</p>
-            </div>
-            <div className="investment-card-content">
-              <ul className="investment-card-list" style={{textAlign:'left',listStyle:'disc',paddingLeft:'1.5rem',fontSize:'0.875rem'}}>
-                <li style={{marginBottom:'0.375rem'}}>Modern homepage redesign</li>
-                <li style={{marginBottom:'0.375rem'}}>Up to 5 main pages</li>
-                <li style={{marginBottom:'0.375rem'}}>Mobile responsive design</li>
-                <li style={{marginBottom:'0.375rem'}}>Live stream widget</li>
-                <li style={{marginBottom:'0.375rem'}}>Basic events calendar</li>
-                <li style={{marginBottom:'0.375rem'}}>Contact forms</li>
-                <li style={{marginBottom:'0.375rem'}}>30-day support</li>
-              </ul>
-            </div>
-            <a href="/#" className="btn btn-primary investment-card-button">Select Essential</a>
+        <div style={{marginBottom:'3rem',padding:'1.5rem',border:'2px solid #0066cc',borderRadius:'8px',background:'#fafafa'}}>
+          <div style={{display:'flex',flexWrap:'wrap',gap:'1rem',alignItems:'baseline',marginBottom:'1rem'}}>
+            <span style={{fontSize:'2rem',fontWeight:'600',color:'#0066cc'}}>$4,000</span>
+            <span style={{color:'#666',fontSize:'0.95rem'}}>20h · One-time · Tithely + Breeze included</span>
           </div>
-
-          <div className="investment-card" style={{border:'3px solid #0066cc',position:'relative'}}>
-            <div style={{position:'absolute',top:'-12px',left:'50%',transform:'translateX(-50%)',background:'#0066cc',color:'#fff',padding:'0.25rem 1rem',borderRadius:0,fontSize:'0.875rem',fontWeight:'600'}}>RECOMMENDED</div>
-            <div className="investment-card-header" style={{marginTop:'1rem'}}>
-              <h3 style={{fontSize:'1.25rem',marginBottom:'0.75rem',fontWeight:'600'}}>Complete</h3>
-              <div style={{fontSize:'2rem',fontWeight:'600',color:'#0066cc',marginBottom:'0.5rem'}}>$6,000</div>
-              <p style={{marginBottom:'0.75rem',color:'#666',fontSize:'0.875rem'}}>One-time investment</p>
-            </div>
-            <div className="investment-card-content">
-              <ul className="investment-card-list" style={{textAlign:'left',listStyle:'disc',paddingLeft:'1.5rem',fontSize:'0.875rem'}}>
-                <li style={{marginBottom:'0.375rem'}}>Everything in Essential</li>
-                <li style={{marginBottom:'0.375rem'}}>Up to 12 main pages</li>
-                <li style={{marginBottom:'0.375rem'}}>Online giving (Stripe)</li>
-                <li style={{marginBottom:'0.375rem'}}>Advanced events system</li>
-                <li style={{marginBottom:'0.375rem'}}>Sermon archive</li>
-                <li style={{marginBottom:'0.375rem'}}>Photo galleries</li>
-                <li style={{marginBottom:'0.375rem'}}>Newsletter integration</li>
-                <li style={{marginBottom:'0.375rem'}}>Content management system</li>
-                <li style={{marginBottom:'0.375rem'}}>SEO optimization</li>
-                <li style={{marginBottom:'0.375rem'}}>60-day support</li>
-              </ul>
-            </div>
-            <a href="/#" className="btn btn-primary investment-card-button">Select Complete</a>
-          </div>
-
-          <div className="investment-card">
-            <div className="investment-card-header">
-              <h3 style={{fontSize:'1.25rem',marginBottom:'0.75rem',fontWeight:'600'}}>Premium</h3>
-              <div style={{fontSize:'2rem',fontWeight:'600',color:'#0066cc',marginBottom:'0.5rem'}}>$6,100</div>
-              <p style={{marginBottom:'0.75rem',color:'#666',fontSize:'0.875rem'}}>One-time investment</p>
-            </div>
-            <div className="investment-card-content">
-              <ul className="investment-card-list" style={{textAlign:'left',listStyle:'disc',paddingLeft:'1.5rem',fontSize:'0.875rem'}}>
-                <li style={{marginBottom:'0.375rem'}}>Everything in Complete</li>
-                <li style={{marginBottom:'0.375rem'}}>Unlimited pages</li>
-                <li style={{marginBottom:'0.375rem'}}>Member portal/login</li>
-                <li style={{marginBottom:'0.375rem'}}>Custom features</li>
-                <li style={{marginBottom:'0.375rem'}}>Advanced analytics</li>
-                <li style={{marginBottom:'0.375rem'}}>Multi-language support</li>
-                <li style={{marginBottom:'0.375rem'}}>Priority development</li>
-                <li style={{marginBottom:'0.375rem'}}>90-day support</li>
-                <li style={{marginBottom:'0.375rem'}}>3 months free maintenance</li>
-              </ul>
-            </div>
-            <a href="/#" className="btn btn-primary investment-card-button">Select Premium</a>
-          </div>
+          <ul style={{listStyle:'disc',paddingLeft:'2rem',margin:0,fontSize:'0.95rem'}}>
+            <li style={{marginBottom:'0.35rem'}}>Full site redesign</li>
+            <li style={{marginBottom:'0.35rem'}}>Tithely + Breeze ChMS (<a href="https://get.tithe.ly/breezechms" target="_blank" rel="noopener noreferrer" style={{color:'#0066cc'}}>unified church software</a>)</li>
+            <li style={{marginBottom:'0.35rem'}}>Custom reusable components & graphics</li>
+            <li style={{marginBottom:'0.35rem'}}>Interactive elements, consistent look site-wide</li>
+            <li style={{marginBottom:'0.35rem'}}>Live stream widget, events, giving</li>
+            <li style={{marginBottom:'0.35rem'}}>Mobile responsive, fast load</li>
+            <li style={{marginBottom:'0.35rem'}}>Post-launch support</li>
+          </ul>
         </div>
 
         <div style={{marginTop:'3rem',padding:'1.5rem',background:'#f5f5f5',borderRadius:'8px'}}>
@@ -490,39 +432,38 @@ export default function Proposal() {
               <li style={{marginBottom:'0.5rem'}}>Cloud hosting (AWS/Vercel)</li>
               <li style={{marginBottom:'0.5rem'}}>Domain name renewal</li>
               <li style={{marginBottom:'0.5rem'}}>SSL certificate</li>
-              <li style={{marginBottom:'0.5rem'}}>Stripe payment processing (2.9% + 30¢)</li>
+              <li style={{marginBottom:'0.5rem'}}>Tithely giving (per their pricing)</li>
               <li style={{marginBottom:'0.5rem'}}>Email services (if applicable)</li>
             </ul>
           </div>
         </div>
 
         <div style={{marginTop:'2rem',padding:'1.5rem',border:'2px solid #0066cc',borderRadius:0}}>
-          <h3 style={{fontSize:'1.5rem',marginBottom:'1.5rem',fontWeight:'600'}}>What's Included in All Packages</h3>
+          <h3 style={{fontSize:'1.5rem',marginBottom:'1.5rem',fontWeight:'600'}}>What's Included</h3>
           <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(250px, 1fr))',gap:'1rem'}}>
             <ul style={{listStyle:'disc',paddingLeft:'2rem',margin:0}}>
-              <li style={{marginBottom:'0.5rem'}}>Discovery & planning sessions</li>
-              <li style={{marginBottom:'0.5rem'}}>Custom design based on mockups</li>
-              <li style={{marginBottom:'0.5rem'}}>Mobile-responsive development</li>
-              <li style={{marginBottom:'0.5rem'}}>Performance optimization</li>
-              <li style={{marginBottom:'0.5rem'}}>Security implementation</li>
+              <li style={{marginBottom:'0.5rem'}}>Discovery & planning</li>
+              <li style={{marginBottom:'0.5rem'}}>Custom design + reusable components & graphics</li>
+              <li style={{marginBottom:'0.5rem'}}>Tithely + Breeze ChMS implementation</li>
+              <li style={{marginBottom:'0.5rem'}}>Mobile-responsive, fast, secure</li>
             </ul>
             <ul style={{listStyle:'disc',paddingLeft:'2rem',margin:0}}>
               <li style={{marginBottom:'0.5rem'}}>Content migration</li>
-              <li style={{marginBottom:'0.5rem'}}>Staff training (2 sessions)</li>
-              <li style={{marginBottom:'0.5rem'}}>Testing & quality assurance</li>
-              <li style={{marginBottom:'0.5rem'}}>Launch support</li>
-              <li style={{marginBottom:'0.5rem'}}>Documentation</li>
+              <li style={{marginBottom:'0.5rem'}}>Staff training</li>
+              <li style={{marginBottom:'0.5rem'}}>Testing & launch</li>
+              <li style={{marginBottom:'0.5rem'}}>Documentation & support</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="next-steps" style={{marginBottom:'4rem'}}>
-        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem'}}>
+      <section id="next-steps" style={{marginBottom:'4rem',paddingBottom:'4rem',borderBottom:'1px solid #eaeaea'}}>
+        <h2 style={{fontSize:'2rem',marginBottom:'1.5rem',fontWeight:'600',borderBottom:'2px solid #ddd',paddingBottom:'0.5rem',display:'flex',alignItems:'center',flexWrap:'wrap'}}>
           Next Steps
+          <ProposalBackToTop />
         </h2>
         <p style={{marginBottom:'1rem'}}>
-          Ready to transform your online presence? Here's how I can move forward:
+          Ready to move forward? Here's how to get started:
         </p>
 
         <div style={{marginTop:'2rem'}}>
@@ -533,9 +474,9 @@ export default function Proposal() {
         </div>
 
         <div style={{marginTop:'2rem'}}>
-          <h3 style={{fontSize:'1.5rem',marginBottom:'1rem',fontWeight:'600'}}>2. Select Package</h3>
+          <h3 style={{fontSize:'1.5rem',marginBottom:'1rem',fontWeight:'600'}}>2. Confirm</h3>
           <p style={{marginBottom:'1rem'}}>
-            Choose the package that best fits your needs and budget. I can customize any package to your requirements.
+            Confirm the offer above. I can adjust scope if your needs differ.
           </p>
         </div>
 
